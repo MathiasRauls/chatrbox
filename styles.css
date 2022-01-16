@@ -540,10 +540,6 @@ button:hover a {
     .hero-img {
         visibility: hidden;
     }
-
-    #hero-img {
-        visibility: visible;
-    }
 }
 
 @media screen and (max-width: 400px) {
