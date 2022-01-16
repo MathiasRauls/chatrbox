@@ -192,6 +192,13 @@ button:hover a {
         filter: drop-shadow(5px 5px 5px #00000041);
 }
 
+#hero-img  {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
 /* Goal */
 
 .goal {
@@ -529,17 +536,14 @@ button:hover a {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (min-width: 400px) {
     .hero-img {
-        transform: translateY(130px) translateX(-80px) scale(2.5);
-    }
-}
-
-@media screen and (max-width: 450px) and (min-width: 400px) {
-    .hero-img {
-        transform: translateY(160px) translateX(-40px) scale(6);
+        visibility: hidden;
     }
 
+    #hero-img {
+        visibility: visible;
+    }
 }
 
 @media screen and (max-width: 400px) {
